@@ -20,7 +20,7 @@ def word_count(filename):
             word_dictionary[word] = word_dictionary.get()
 
 
-    return word_dictionary.items()
+return word_dictionary.items()
 
 
 
