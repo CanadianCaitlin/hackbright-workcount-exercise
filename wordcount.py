@@ -1,8 +1,26 @@
 
 
+# define a function that takes in file as a parameter
+# open the file
+# create empty dictionary
+# loop through file by line
+    # split line by space and rstripe
+    # for word in line
+    # check to see if the word is in the dictionary
+        # if the word is in dictionary, increase the count by 1
+        # if the word is not in the dictionary, add word to dictionary
+# return dictionary items
+
+def word_count(filename):
+    file = open(filename)
+    word_dictionary = {}
+    for line in file:
+        list = line.rstrip().split(" ")
+        for word in list:
+            word_dictionary[word] = word_dictionary.get()
 
 
-
+    return word_dictionary.items()
 
 
 
