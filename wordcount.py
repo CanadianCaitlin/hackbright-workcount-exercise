@@ -17,11 +17,12 @@ def word_count(filename):
     for line in file:
         list = line.rstrip().split(" ")
         for word in list:
-            word_dictionary[word] = word_dictionary.get()
+            word_dictionary[word] = word_dictionary.get(word, 0) + 1
 
 
     return word_dictionary.items()
 
+print(word_count("test.txt"))
 
 
 
